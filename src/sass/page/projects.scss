@@ -1,0 +1,118 @@
+.projects{
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px 30px 0;
+  flex-wrap: wrap;
+  &__first, &__second{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 20px 20px 20px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &__image{
+      position: relative;
+      height: 225px;
+    }
+    &__rect{
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: 37.5px solid transparent;
+      border-left: 37.5px solid rgb(173, 209, 54); 
+      border-top: 37.5px solid rgb(173, 209, 54);
+      border-top-left-radius: 10px;
+    }
+    &__new{
+      font-size: 17px;
+      font-family: "Montserrat";
+      color: #fff;
+      text-transform: uppercase;
+      position: absolute;
+      top: 15px;
+      left: 5px;
+      transform: rotate(-45deg);
+    }
+    &__price{
+      color: #fff;
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      padding: 5px;
+      border-radius: 5px;
+      background-color: rgb(38, 166, 209);
+    }
+    &__text{
+      padding: 30px 20px;
+      background-color: rgb(247, 247, 247);
+      h1{
+        font-size: 17px;
+        color: rgb(72, 72, 72);
+        margin-bottom: 15px;
+      }
+      p{
+        font-size: 13px;
+        color: rgba(72, 72, 72, 0.71);
+        line-height: 1.2;
+        margin-bottom: 15px;
+      }
+    }
+    &__time{
+      display: flex;
+      justify-content: space-between;
+    }
+    &-line{
+      content: "";
+      background-color: grey;
+      height: 1px;
+      width: 100%;
+    }
+    &__details{
+      margin-top: 15px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      p{
+        margin-bottom: 0;
+      }
+      &-rect{
+        cursor: pointer;
+        background: none;
+        padding: 0;
+        height: 10px;
+        margin-left: 15px;
+        border: 8px solid transparent;
+        border-left: 12px solid rgb(173, 209, 54);
+      }
+    }
+  }
+}
+.first__progress-bar{
+  height: 20px;
+  border-radius: 10px;
+  background-color: rgb(227, 227, 227);
+  margin-bottom: 15px;
+  span{
+    display: inline-block;
+    height: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(173, 209, 54);
+    width: 10%;
+  }
+}
+.second__progress-bar{
+  height: 20px;
+  border-radius: 10px;
+  background-color: rgb(227, 227, 227);
+  margin-bottom: 15px;
+  span{
+    display: inline-block;
+    height: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(173, 209, 54);
+    width: 60%;
+  }
+}

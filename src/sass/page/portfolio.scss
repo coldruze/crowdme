@@ -1,0 +1,90 @@
+.portfolio{
+  display: flex;
+  &__properties, &__buyers{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    &__image{
+      margin-right: 60px;
+      width: 100px;
+    }
+    &__text{
+      h1{
+        font-size: 23px;
+        font-family: "Montserrat";
+        color: rgb(81, 81, 81);
+        margin-bottom: 30px;
+      }
+      p{
+        font-size: 17px;
+        color: rgb(81, 81, 81);
+        line-height: 2;
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &__properties{
+    padding: 50px 80px 50px 140px;
+    background-color: #e1f8fe;
+    &-btn{
+      cursor: pointer;
+      font-size: 14px;
+      color: #fff;
+      padding: 15px 30px; 
+      border: none;
+      border-radius: 8px;
+      background-color: rgb(38, 166, 209);
+    }
+  }
+  &__buyers{
+    padding: 50px 140px 50px 80px;
+    background-color: #f5f9eb;
+    &-btn{
+      cursor: pointer;
+      font-size: 14px;
+      color: #fff;
+      padding: 15px 30px; 
+      border: none;
+      border-radius: 8px;
+      background-color: rgb(173, 209, 54);
+    }
+  }
+}
+
+
+@media(max-width:1300px){
+  .portfolio{
+    &__properties, &__buyers{
+      padding: 50px;
+    }
+  }
+}
+@media(max-width:1000px){
+  .portfolio{
+    flex-direction: column;
+    &__properties, &__buyers{
+      width: 100%;
+      padding: 50px 100px;
+    }
+  }
+}
+@media(max-width:650px){
+  .portfolio{
+    &__properties, &__buyers{
+      padding: 50px;
+    }
+  }
+}
+@media(max-width:500px){
+  .portfolio{
+    &__properties, &__buyers{
+      flex-direction: column;
+      text-align: center;
+      padding: 50px 25px;
+      &__image{
+        margin-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
